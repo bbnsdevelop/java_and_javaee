@@ -14,5 +14,11 @@ public class MainFuncionario {
 		} else {
 			System.out.println("Funcionarios diferentes");
 		}
+
+		System.out.println("Funcionario: " + f1); // toString
+		System.out.println("Funcionario: " + f2); // toString
+		
+		System.out.println("HashCode de f1: " + f1.hashCode());
+		System.out.println("HashCode de f2: " + f2.hashCode());
 	}
 }

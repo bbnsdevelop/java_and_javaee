@@ -59,4 +59,16 @@ public class Funcionario {
 		return false;
 	}
 
+	@Override
+	public String toString() {
+		return idFuncionario + ", " + nome + ", " + salario;
+	}
+
+	@Override
+	public int hashCode() { // regra de ordenação
+		// Geralmente a regra de ordenação do hashCode
+		// é baseada na regra do equals
+		return idFuncionario.hashCode();
+	}
+
 }
