@@ -1,6 +1,7 @@
 package main;
 
 import entity.Cliente;
+import entity.PessoaFisica;
 
 //Classe utilizada para exeutar o projeto Java local
 public class Main {
@@ -25,6 +26,14 @@ public class Main {
 		System.out.println("Id.....: " + c2.getIdCliente());
 		System.out.println("Nome...: " + c2.getNome());
 		System.out.println("Email..: " + c2.getEmail());
+		
+		PessoaFisica pf = new PessoaFisica(2, "Joao,",	"joao@gmail.com", "0123456789");
+		
+		System.out.println("\nDados de Pessoa Fisica");
+		System.out.println("Id.....: " + pf.getIdCliente());
+		System.out.println("Nome...: " + pf.getNome());
+		System.out.println("Email..: " + pf.getEmail());
+		System.out.println("Cpf....: " + pf.getCpf());
 		
 		
 	}
