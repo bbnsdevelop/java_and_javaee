@@ -11,12 +11,12 @@ public class Main {
 
 		//Classe -> Objeto
 		Cliente c1 = new Cliente();
-		c1.idCliente = 1;
-		c1.nome = "Sergio Mendes";
-		c1.email = "sergio.coti@gmail.com";
-		System.out.println("Id.....: " + c1.idCliente);
-		System.out.println("Nome...: " + c1.nome);
-		System.out.println("Email..: " + c1.email);
+		c1.setIdCliente(1);
+		c1.setNome ("Sergio Mendes");
+		c1.setEmail ("sergio.coti@gmail.com");
+		System.out.println("Id.....: " + c1.getIdCliente());
+		System.out.println("Nome...: " + c1.getNome());
+		System.out.println("Email..: " + c1.getEmail());
 		//imprimir mensagem no console
 		//syso -> ctrl + espaço
 		System.out.println("Bem vindo ao Java - Turma BRQ COTI");
