@@ -42,4 +42,21 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
+	@Override
+	// annotation -> sobrescrita
+	public boolean equals(Object obj) {
+		// verificar se o parametro 'obj' é do tipo Funcionario
+		// Se 'obj' é uma instancia de Funcionario
+		if (obj instanceof Funcionario) { // é do tipo?
+			// converter 'obj' para Funcionario
+			Funcionario f = (Funcionario) obj; // casting
+			return f.getIdFuncionario().equals(idFuncionario);
+			// if(f.getIdFuncionario() == this.idFuncionario){
+			// return true;
+			// }
+		}
+		// default retornar falso
+		return false;
+	}
+
 }
