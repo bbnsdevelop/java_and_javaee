@@ -1,6 +1,7 @@
 package main;
 
 import entity.Produto;
+import files.ControleProduto;
 import view.InputProduto;
 
 public class MainProduto {
@@ -14,6 +15,9 @@ public class MainProduto {
 		p.setPreco( in.lerPreco() );
 		System.out.println("\nDados do Produto:");
 		System.out.println(p);
+		
+		ControleProduto c = new ControleProduto();
+		c.gravarDados(p);
 
 	}
 
