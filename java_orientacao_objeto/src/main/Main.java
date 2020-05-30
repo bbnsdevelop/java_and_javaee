@@ -17,9 +17,15 @@ public class Main {
 		System.out.println("Id.....: " + c1.getIdCliente());
 		System.out.println("Nome...: " + c1.getNome());
 		System.out.println("Email..: " + c1.getEmail());
-		//imprimir mensagem no console
-		//syso -> ctrl + espaço
-		System.out.println("Bem vindo ao Java - Turma BRQ COTI");
+
+		
+		Cliente c2 = new Cliente(1, "Ana", "ana@gmail");
+		
+		System.out.println("\nDados de Cliente:");
+		System.out.println("Id.....: " + c2.getIdCliente());
+		System.out.println("Nome...: " + c2.getNome());
+		System.out.println("Email..: " + c2.getEmail());
+		
 		
 	}
 }
