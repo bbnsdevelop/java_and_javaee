@@ -2,6 +2,7 @@ package files;
 
 import java.io.File;
 import java.io.FileWriter;
+import java.util.List;
 
 import entity.Produto;
 
@@ -17,11 +18,11 @@ public class ControleProduto {
 			// false -> sempre sobrescrever/substituir o
 			// arquivo antigo
 			// FileWriter lança (throws) IOException
-			
+
 			File dir = new File("C:\\aula\\produtos");
-			if(!dir.exists()) {
+			if (!dir.exists()) {
 				dir.mkdirs();
-			}			
+			}
 			FileWriter fw = new FileWriter("c:\\aula\\produtos\\produtos.txt", true);
 			fw.write("Dados -> " + p);
 			// escrevendo no arquivo o toString da Classe
@@ -30,6 +31,12 @@ public class ControleProduto {
 			System.out.println("Dados gravados	com sucesso.");
 		} catch (Exception e) {
 			System.out.println("Erro ao gravar	arquivo: " + e.getMessage());
+		}
+	}
+
+	public void gravarDados(List<Produto> produtos) throws Exception {
+		for(int i = 0; i < produtos.size(); i++){
+			gravarDados(produtos.get(i));
 		}
 	}
 
