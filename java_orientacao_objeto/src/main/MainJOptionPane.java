@@ -16,6 +16,8 @@ public class MainJOptionPane {
 			JOptionPane.showMessageDialog(null, "Dados do Pessoa: " + p);
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, "Erro -> " + e.getMessage());
+		} finally {
+			JOptionPane.showMessageDialog(null, "FIM DO PROGRAMA");
 		}
 	}
 
