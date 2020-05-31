@@ -13,6 +13,7 @@ public class Cliente {
 	private Integer idCliente;
 	private String nome;
 	private String email;
+	private Endereco endereco; // Associação (TER)
 
 	// Construtor é um método que tem o mesmo nome da Classe
 	// e não possui tipo definido de retorno
@@ -53,6 +54,13 @@ public class Cliente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public Endereco getEndereco() {
+		return endereco;
+		}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+		}
 
 	@Override
 	public String toString() {
